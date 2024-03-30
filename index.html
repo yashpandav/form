@@ -4,14 +4,17 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>START</title>
+     <title>START</title> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="stylesheet" href="start.css" />
      <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body id="startBody">
      <div class="container d-flex justify-content-center aling-items-center">
-          <form action="start.html" method="post">
+          <form action="index.html" method="post">
                <div class="name">
                     <label for="fn">First Name : </label>
                     <input type="text" class="form-control" id="fn" name="fn" placeholder="Enter Your First Name">
@@ -57,7 +60,26 @@
                     <button type="reset" id="reset" class="btn">Reset</button>
                </div>
           </form>
+     </div>
 
+     <div class="container-fluid d-flex justify-content-between align-intems-center" id="data">
+          <span class="mt-2">
+               <a id="link" class="d-flex" href="final.html" target="_blank">
+                    <i class="fa-solid fa-link"></i>   
+                    <p>Click here to see the data</p>              
+               </a>
+          </span>
+
+          <div id="personal-link" class="mt-2 d-flex justify-content-center align-intems-center">
+               <a href="https://www.linkedin.com/in/yash-pandav-139314290" style=" text-decoration: none;">
+                    <i class="fa-brands fa-linkedin" style="color: black;"></i>
+               </a>
+               <a href="https://github.com/yashpandav" style="text-decoration: none;">
+                    <i class="fa-brands fa-github" style="color: black;"></i>
+               </a>
+               <h4>Yash Pandav</h4>
+          </div>
+          
      </div>
 
 </body>
