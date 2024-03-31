@@ -113,20 +113,39 @@ label[for="male"] , label[for="female"] , label[for="other"]{
 
 
 /* SECOND FILE */
+
+#final-container{
+     animation: ani 1s ease 0s 1;
+}
+
+#editform{
+     animation: ani 1s ease 0s 1;
+}
+
+@keyframes ani {
+     0%{
+          opacity: 0;
+     }
+     100%{
+          opacity: 1;
+     }
+}
+
 h1{
      text-align: center;
 }
 
-#final-container{
-     display: flex;
-     justify-content: center;
+table{
+     margin-top: 2rem;
 }
-          
-td , th{
-     border: 2px solid #000000;
-}    
 
+td .btn{
+     width: 80px;
+}
 
+#editBtn{
+     margin-left: 3rem;
+}
 
 /* MEDIA */
 
@@ -274,4 +293,5 @@ td , th{
           margin-bottom: 5vw;
      }
 }
+
 
