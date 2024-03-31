@@ -27,7 +27,7 @@
           </table>
 
           <span id ="goback" class="mt-5">
-               <a style="text-decoration: none;" class="d-flex align-intems-center mt-5" href="https://yashpandav.github.io/form/index.html">
+               <a style="text-decoration: none;" class="d-flex align-intems-center mt-5" href="index.html">
                     <i class="fa-solid fa-link text-info ms-3 mt-1"></i>   
                     <p class="text-secondary ms-3">Click here to go back to form</p>              
                </a>
@@ -38,7 +38,7 @@
 
      <div class="container-fluid d-flex justify-content-center align-items-center" style="background: rgb(129,141,140);
      background: linear-gradient(90deg, rgba(129,141,140,1) 8%, rgba(115,179,193,1) 35%, rgba(114,147,145,1) 90%);">
-          <form action="final.html" style="display: none;" method="post" id="editform">
+          <form action="final.html" style="display: none;" method="get" id="editform">
                <h3 style="text-align: center; font-size:2vw;">Edit Data</h3>
                <div class="name">
                     <label for="fn">First Name : </label>
@@ -81,9 +81,10 @@
                </div>
 
                <div class="d-flex justify-content-evenly">
-                    <input type="submit" id="submit" class="btn">
+                    <input type="submit" id="submit" class="btn" value="Update">
                     <input type="button" id="cancel" class="btn" value="Cancel">  
                </div>
+
           </form>
      </div>
 </body>
