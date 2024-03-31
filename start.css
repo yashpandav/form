@@ -132,40 +132,37 @@ td , th{
      #startBody{
           background-image:url('small.png');
           background-size:auto;
-     }
-          
+     }    
+
      form{
-          width: 80%;
+          width: 95%;
           height: 90%;
-          margin-top: 50px;
-          background-color: #ffffff86;
-          border: 4px solid rgba(255, 235, 205, 0.318); 
-          box-shadow: 10px 10px 10px #a0a59886 , -10px 10px 10px #a0a59886,10px -10px 10px #a0a59886 , -10px -10px 10px #a0a59886; 
-          backdrop-filter: blur(1px);
-          border-radius: 3vw;    
-          color: #1c5a9d;      
+          margin-top: 100px;
+          border: 2px solid rgba(255, 235, 205, 0.318); 
+          box-shadow: 2.5px 2.5px 2.5px #a0a59886 , -2.5px 2.5px 2.5px #a0a59886,2.5px -2.5px 2.5px #a0a59886 , -2.5px -2.5px 2.5px #a0a59886; 
+          border-radius: 1rem;    
      }
 
      .name{
-          margin-left: 2vw;
-          margin-top: 2vw;
+          margin-left: 7vw;
+          margin-top: 5vw;
      }
 
      label[for="fn"] , label[for="number"] , label[for="name"]{
-          font-size : 18.5px;
+          font-size : 5vw;
      }
 
      input[type="text"] , input[type="number"]{
-          margin-top: 0.6vw;
-          width: 95%;
+          margin-top: 1.5vw;
+          width: 90%;
      }
 
      input[type="text"]:focus , input[type="number"]:focus{
-          box-shadow: 2px 2px 2px #c7bfb5 , -2px 2px 2px #c7bfb5 , 2px -2px 2px #c7bfb5 , -2px -2px 2px #c7bfb5;
+          box-shadow: 1px 1px 1px #c7bfb5 , -1px 1px 1px #c7bfb5 , 1px -1px 1px #c7bfb5 , -1px -1px 1px #c7bfb5;
      }
 
      label[for="male"] , label[for="female"] , label[for="other"]{
-          font-size: 18px;
+          font-size: 17px;
           padding-left: 0.47vw;
           padding-right: 1vw;
           color: #316d81;
