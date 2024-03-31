@@ -1,5 +1,5 @@
 let data = JSON.parse(localStorage.getItem("data")) || [];
-
+let tb = document.getElementById("final-container");
 
 function add() {    
      localStorage.setItem("data", JSON.stringify(data));
@@ -18,18 +18,20 @@ function add() {
                <td>${element.gender}</td>
                <td>${element.number}</td>
                <td>${element.city}</td> 
-               <td><button type="button" id="editBtn" ${editBtnEnabled} onclick="{edit(${element.id})}">Edit</button></td>
-               <td><button type="button" id="deleteBtn"  ${delBtnEnabled} onclick="{remove(${element.id})}">Delete</button></td>
-               <td><button type="button" id="${element.id}"  onclick="${confirm}">Confirm</button></td>
+               <td><button type="button" id="editBtn" class="btn bg-info text-white" ${editBtnEnabled} onclick="{edit(${element.id})}">Edit</button></td>
+               <td><button type="button" id="deleteBtn" class="btn bg-danger text-white"  ${delBtnEnabled} onclick="{remove(${element.id})}">Delete</button></td>
+               <td><button type="button" id="${element.id}" class="btn bg-success text-white" onclick="${confirm}">Confirm</button></td>
           </tr>`;
      });
      tbody.innerHTML = insert;
 }
 
 function edit(id) {
+     tb.style.display = 'none';
      let currentData = data.find(elements => elements.id === id);
      let form = document.getElementById("editform");
      form.style.display = "";
+     
      let fn = document.getElementById("fn");
      fn.value = currentData.fn;
 
@@ -71,11 +73,14 @@ function edit(id) {
           let index = data.findIndex(ele => ele.id === idEdit);
           data[index] = newObj;
           add();
+          form.style.display = "none";
+          tb.style.display = '';
      });
 
      let cancelBtn = document.getElementById("cancel");
      cancelBtn.addEventListener("click",() => {
           form.style.display = "none";
+          tb.style.display = '';
      });
 }
 
