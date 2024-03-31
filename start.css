@@ -136,7 +136,6 @@ td , th{
 
      form{
           width: 95%;
-          height: 90%;
           margin-top: 100px;
           border: 2px solid rgba(255, 235, 205, 0.318); 
           box-shadow: 2.5px 2.5px 2.5px #a0a59886 , -2.5px 2.5px 2.5px #a0a59886,2.5px -2.5px 2.5px #a0a59886 , -2.5px -2.5px 2.5px #a0a59886; 
@@ -144,17 +143,17 @@ td , th{
      }
 
      .name{
-          margin-left: 7vw;
+          margin-left: 5vw;
           margin-top: 5vw;
      }
 
      label[for="fn"] , label[for="number"] , label[for="name"]{
-          font-size : 5vw;
+          font-size : 17px;
      }
 
      input[type="text"] , input[type="number"]{
-          margin-top: 1.5vw;
-          width: 90%;
+          margin-top: 1.9vw;
+          width: 91%;
      }
 
      input[type="text"]:focus , input[type="number"]:focus{
@@ -162,44 +161,90 @@ td , th{
      }
 
      label[for="male"] , label[for="female"] , label[for="other"]{
-          font-size: 17px;
-          padding-left: 0.47vw;
-          padding-right: 1vw;
-          color: #316d81;
+          font-size: 16px;
+     }
+
+     #male{
+          margin-left: 2.3vw;
+     }
+
+     #gendertemp{
+          margin-top: 1.9vw;  
      }
 
      #radio-temp{
           margin-left: 1.5vw;
-          margin-top: 1.5px;
+          margin-top: 1.9vw;
      }
 
      #city{
-          margin-left: 1.5vw;
-          width: 14vw;
-          height: 2.8vw;
-          color: rgb(58, 58, 58);
+          margin-top: 1.3vw;
+          margin-left: 4.4vw;
+          width: 40%;
+          height: auto;
      }
 
-     #city:focus{
-          box-shadow: 2px 2px 2px #c7bfb5 , -2px 2px 2px #c7bfb5 , 2px -2px 2px #c7bfb5 , -2px -2px 2px #c7bfb5;
+     #temp{
+          margin-top: 0.4vw;
      }
-
 
      #submit , #reset{
-          margin-top: 2.3vw;   
-          border-radius: 11px;
-          background-color: #5286a1;
-          color: whitesmoke;
-          width: 25%; 
-          font-weight: 500;
-          margin-bottom: 1vw;
-          transition: all 0.6s ease-in;
+          margin-top: 7vw;   
+          border-radius: 8px;
+          width: 45%; 
+          margin-bottom: 5vw;
      }
-
-     #submit:hover , #reset:hover{
-          color: #2d80ad;
-          background-color: white;
-     }
-
-
 }
+
+@media screen and (max-width: 330px){
+     form{
+          width: 98%;
+     }
+
+     .name{
+          margin-left: 5vw;
+     }
+
+     label[for="male"] , label[for="female"] , label[for="other"]{
+          font-size: 14.5px;
+          padding-left: 0vw;
+     }
+
+     #male{
+          margin-left: 2vw;
+     }
+
+     #gendertemp{
+          margin-top: 1.9vw;  
+     }
+
+     #radio-temp{
+          margin-left: 1vw;
+          margin-top: 1.9vw;
+     }
+
+     input[type="text"] , input[type="number"]{
+          width: 95%;
+          margin-top: 1.9vw;
+     }
+
+     #temp{
+          margin-top: 3vw;
+     }
+
+     #city{
+          margin-top: 3.4vw;   
+          width: 39%;
+          height: auto;
+          margin-left: 3.3vw;
+     }
+
+     #submit , #reset{
+          margin-top: 6.5vw;   
+          border-radius: 9px;
+          width: 45%; 
+          margin-bottom: 5vw;
+     }
+}
+
+
