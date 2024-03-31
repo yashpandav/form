@@ -84,12 +84,14 @@ label[for="male"] , label[for="female"] , label[for="other"]{
      background-color: white;
 }
 
-
-#data{
+#bottom{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
      background-color: #ffffff4a;
      backdrop-filter: blur(1px);
-     margin-top: 46.4px;
-     height: 3.2rem;
+     margin-top: 35.5px;
+     height: auto;
 }
 
 #link{
@@ -194,6 +196,32 @@ td , th{
           width: 45%; 
           margin-bottom: 5vw;
      }
+
+     #bottom{
+          display: grid;
+          justify-content:'';
+          grid-template-areas: 
+               'spanlink'
+               'plinks'
+          ;
+          margin-top: 100px;
+          height: auto;
+     }
+     
+     #spanlink{
+          grid-area: spanlink;
+     }
+
+     #personal-link{
+          margin-right: 5rem;
+     }
+
+     #personal-link i{
+          font-size: 23px;
+          margin-right: 1.5rem;
+          margin-top: 1px;
+          grid-area: plinks;
+     }
 }
 
 @media screen and (max-width: 330px){
@@ -246,5 +274,4 @@ td , th{
           margin-bottom: 5vw;
      }
 }
-
 
